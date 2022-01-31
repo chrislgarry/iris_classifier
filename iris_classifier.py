@@ -13,7 +13,7 @@ from time import sleep
 if __name__ == "__main__":
     # Load, encode, and normalize dataset
     label_encoder = LabelEncoder()
-    dataset = pd.read_csv('datasets/Iris data.txt', header=None)
+    dataset = pd.read_csv('dataset/Iris data.txt', header=None)
     dataset.columns = ['Sepal length', 'Sepal Width', 'Petal length',
                        'Petal width', 'Label']
     dataset['Label'] = label_encoder.fit_transform(dataset['Label'])
